@@ -1,6 +1,3 @@
-[![parse-json-with-dates stats](https://github-readme-stats.vercel.app/api?username=giacomorebonato)](https://github.com/giacomorebonato/parse-json-with-dates)
-
-
 # parse-json-with-dates
 
 A small utility that parses JSON and converts date fields to Date type.  
