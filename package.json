@@ -1,7 +1,7 @@
 {
   "name": "parse-json-with-dates",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Parse JSON casting date fields",
   "main": "lib/index.js",
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^11.0.1",
