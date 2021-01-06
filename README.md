@@ -7,10 +7,12 @@ A small utility that parses JSON and converts date fields to Date type.
 ```js
 import { parseJsonWithDates } from 'parse-json-with-dates'
 
-parseJsonWithDates(
-  JSON.stringify({ 'date-field': new Date() }),
+const parsed = parseJsonWithDates(
+  JSON.stringify({ 'date-field': new Date().toISOString() }),
   ['date-field']
 )
+
+parsed.a.toISOString()
 ```
 
 ```typescript
@@ -21,7 +23,9 @@ type MyDate = {
 }
 
 parseJsonWithDates<MyDate>(
-  JSON.stringify({ 'date-field': new Date() }),
+  JSON.stringify({ 'date-field': new Date().toISOString() }),
   ['date-field']
 )
+
+parsed.a.toISOString()
 ```

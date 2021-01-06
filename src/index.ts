@@ -20,3 +20,7 @@ export const parseJsonWithDates = <T>(
     return value
   })
 }
+
+if (typeof window !== 'undefined') {
+  (window as any).parseJsonWithDates = parseJsonWithDates
+}

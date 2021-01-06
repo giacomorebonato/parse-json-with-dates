@@ -1,6 +1,6 @@
 {
   "name": "parse-json-with-dates",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Parse JSON casting date fields",
   "main": "lib/index.js",
   "devDependencies": {

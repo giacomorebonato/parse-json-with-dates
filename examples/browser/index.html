@@ -1,0 +1,13 @@
+<html>
+  <script src='../../lib/index.js'></script>
+  <script>
+    const data = parseJsonWithDates(
+      JSON.stringify({
+        a: new Date()
+      }, ['a'])
+    )
+
+    console.log(data.a.toISOString())
+  </script>
+  <body></body>
+</html>
