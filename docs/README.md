@@ -1,3 +1,5 @@
+parse-json-with-dates / [Exports](modules.md)
+
 # parse-json-with-dates
 
 A small utility that parses JSON and converts date fields to Date type.  
