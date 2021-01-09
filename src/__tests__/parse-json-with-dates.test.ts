@@ -12,7 +12,7 @@ describe('parse-json-with-dates', () => {
       a: Date
     }
     const parsed = parseJsonWithDates<MyDate>(
-      JSON.stringify({ a: '2021-01-04T16:11:39.462Z' }),
+      JSON.stringify({ a: new Date() }),
       ['a']
     )
 
@@ -24,7 +24,7 @@ describe('parse-json-with-dates', () => {
       a: Date
     }
     const parsed = parseJsonWithDates<MyDate>(
-      JSON.stringify({ a: '2021-01-04T16:11:39.462Z' }),
+      JSON.stringify({ a: new Date() }),
       ['a']
     )
 
