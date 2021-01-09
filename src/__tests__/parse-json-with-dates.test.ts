@@ -33,7 +33,7 @@ describe('parse-json-with-dates', () => {
 
   it('sets invalid dates', () => {
     type MyDate = {
-      a: any
+      a: never
     }
     const parsed = parseJsonWithDates<MyDate>(
       JSON.stringify({ a: 'invalid-date' }),
