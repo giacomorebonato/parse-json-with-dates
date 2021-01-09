@@ -1,10 +1,19 @@
 type DataType = {
-  [key: string]: boolean
+  [key: string]: true
 }
 
-export const parseJsonWithDates = <T>(
+type DateKeys<T> = string &
+  {
+    [P in keyof T]: T[P] extends Date
+      ? P
+      : T[P] extends object
+      ? DateKeys<T[P]>
+      : never
+  }[keyof T]
+
+export const parseJsonWithDates = <T = any>(
   text: string,
-  dateFields: string[] = []
+  dateFields: DateKeys<T>[] = []
 ): T => {
   const data: DataType = {}
 
@@ -22,5 +31,5 @@ export const parseJsonWithDates = <T>(
 }
 
 if (typeof window !== 'undefined') {
-  (window as any).parseJsonWithDates = parseJsonWithDates
+  ;(window as any).parseJsonWithDates = parseJsonWithDates
 }
