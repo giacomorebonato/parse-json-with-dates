@@ -2,6 +2,8 @@
 
 A small utility that parses JSON and converts date fields to Date type.  
 
+[Documentation](./docs/index.html)
+
 **Example**
 
 ```js
@@ -22,7 +24,7 @@ type MyDate = {
   a: Date
 }
 
-parseJsonWithDates<MyDate>(
+const parsed = parseJsonWithDates<MyDate>(
   JSON.stringify({ 'date-field': new Date() }),
   ['date-field']
 )
