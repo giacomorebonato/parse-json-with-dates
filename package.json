@@ -1,6 +1,6 @@
 {
   "name": "parse-json-with-dates",
-  "version": "0.0.13",
+  "version": "0.1.1",
   "description": "Parse JSON casting date fields",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -48,7 +48,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm test && npm run lint && npm run prettier && istanbul-badges-readme && git add 'README.md'"
+      "pre-commit": "npm test && npm run lint && npm run prettier && npm run make-badges && git add 'README.md'"
     }
   }
 }

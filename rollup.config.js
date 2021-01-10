@@ -12,6 +12,15 @@ const config =  [
     },
     plugins: [typescript(), nodeResolve()],
   },
+  {
+    input: './src/browser.ts',
+    output: {
+      file: './lib/index.browser.js',
+      format: 'umd',
+      name: 'parse-json-with-dates',
+    },
+    plugins: [typescript(), nodeResolve()],
+  },
 ]
 
 // eslint-disable-next-line no-undef

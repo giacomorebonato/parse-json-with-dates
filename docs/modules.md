@@ -12,21 +12,21 @@
 
 ### parseJsonWithDates
 
-▸ `Const`**parseJsonWithDates**<T\>(`text`: *string*, `dateFields?`: *DateKeys*<T\>[]): T
+▸ `Const`**parseJsonWithDates**<JsonOutput\>(`text`: *string*, `settings?`: ParseSettings): JsonOutput
 
 #### Type parameters:
 
 Name | Default |
 ------ | ------ |
-`T` | *unknown* |
+`JsonOutput` | *unknown* |
 
 #### Parameters:
 
 Name | Type | Default value |
 ------ | ------ | ------ |
 `text` | *string* | - |
-`dateFields` | *DateKeys*<T\>[] | ... |
+`settings` | ParseSettings | ... |
 
-**Returns:** T
+**Returns:** JsonOutput
 
-Defined in: [index.ts:1](https://github.com/giacomorebonato/parse-json-with-dates/blob/0064ec9/src/index.ts#L1)
+Defined in: [index.ts:14](https://github.com/giacomorebonato/parse-json-with-dates/blob/022a666/src/index.ts#L14)
