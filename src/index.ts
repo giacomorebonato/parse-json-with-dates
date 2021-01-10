@@ -8,7 +8,7 @@ export const parseJsonWithDates = <T = unknown>(
     data[dateFields[i]] = true
   }
 
-  return JSON.parse(text, (key, value) => {    
+  return JSON.parse(text, (key, value) => {
     if (Object.prototype.hasOwnProperty.call(data, key)) {
       return new Date(value)
     }
@@ -18,5 +18,5 @@ export const parseJsonWithDates = <T = unknown>(
 }
 
 if (typeof window !== 'undefined') {
-  (window as any).parseJsonWithDates = parseJsonWithDates // eslint-disable-line 
+  ;(window as any).parseJsonWithDates = parseJsonWithDates // eslint-disable-line
 }
