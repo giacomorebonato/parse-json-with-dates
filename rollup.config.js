@@ -14,6 +14,7 @@ const config =  [
   },
 ]
 
+// eslint-disable-next-line no-undef
 if (process.env.NODE_ENV === 'production') {
   config[0].plugins.push(terser())
 }
