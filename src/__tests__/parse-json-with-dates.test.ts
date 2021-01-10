@@ -74,7 +74,7 @@ describe('parse-json-with-dates', () => {
       }
       const parsed = parseJsonWithDates<MyDate>(
         JSON.stringify({ a: new Date().toISOString() }),
-        { verifyDateByRegex: true }
+        { verifyDateByRegexp: true }
       )
 
       expect(parsed.a).toBeInstanceOf(Date)

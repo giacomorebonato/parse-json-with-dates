@@ -12,7 +12,7 @@ A small utility with **zero dependencies** that parses JSON and converts date fi
 
 ## Description
 
-You can parse JSON, by passing the name of the keys that contain date information or by passing the paramenter `verifyDateByRegex: true`, this solution is **less performant** and checks each of the object key using a RegExp to verify if it contains a Date string.
+You can parse JSON, by passing the name of the keys that contain date information or by passing the paramenter `verifyDateByRegexp: true`, this solution is **less performant** and checks each of the object key using a RegExp to verify if it contains a Date string.
 
 **Example**
 
@@ -31,7 +31,7 @@ const parsed = parseJsonWithDates(
 const parsed = parseJsonWithDates(
   JSON.stringify({ 'date-field': new Date() }),
   {
-    verifyDateByRegex: true
+    verifyDateByRegexp: true
   }
 )
 
