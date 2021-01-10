@@ -3,6 +3,7 @@
   "version": "0.0.9",
   "description": "Parse JSON casting date fields",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^11.0.1",
     "@types/jest": "^26.0.19",
