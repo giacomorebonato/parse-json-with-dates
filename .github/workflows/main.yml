@@ -33,8 +33,9 @@ jobs:
         with:
           node-version: 14
       - name: Publish
-        run: |
-          npm ci && npm run build
+      - run: npm ci
+      - run: npm run build
+      - run: |          
           npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
           npm publish --ignore-scripts
         env:
